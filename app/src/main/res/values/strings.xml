@@ -24,4 +24,9 @@
     <string name="txtTextViewAdventureDescription">Jujuy is a destination full of nature where you can explore different natural environments within a short distance of each other.  Its regions -Puna, Quebrada, Valleys and Yungas- provide magical settings for the practice of incredibly rewarding activities. Be part of an authentic adventure by choosing the activity that you enjoy the most. We invite you to meet our duly authorized tourist service providers.</string>
     <string name="txtTextViewUnmissableTitle">Unmissable</string>
     <string name="txtTextViewUnmissableDesc">Places, walks and experiences that you should not miss on your next visit to Jujuy: \n- Pucará de Tilcara\n- Camino del Inca\n- Potrero de Yala\n- Valle de la luna</string>
+    <string name="txtTextViewCelebrationsMainTitle">Celebrations</string>
+    <string name="txtTextViewErmitas">Ermitas</string>
+    <string name="txtTextViewNautic">Nautic Pilgrimage</string>
+    <string name="txtTextViewWhiteRiver">White River Pilgrimage</string>
+    <string name="txtTextViewManger">Mangers</string>
 </resources>
