@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Destinations">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp">
+
+                <TextView
+                    android:id="@+id/textViewMainTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtTextViewMainTitle"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="668dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPunaDescription"
+                app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPunaDescription">
+
+                <TextView
+                    android:id="@+id/textViewPunaTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewPunaTitle"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewPunaDescription"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewPunaDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="41dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewPunaDescription"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPunaTitle" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="256dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="27dp"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonPunaMoreInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPunaDescription"
+                    app:srcCompat="@drawable/destpuna" />
+
+                <Button
+                    android:id="@+id/buttonPunaMoreInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtButtonMoreInfo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="580dp">
+
+                <TextView
+                    android:id="@+id/textViewRavine"
+                    android:layout_width="268dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="66dp"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewRavineTitle"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewRavineDescription"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewRavineDescription"
+                    android:layout_width="350dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginEnd="31dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewRavineDescription"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRavine" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonRavineMoreInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRavineDescription"
+                    app:srcCompat="@drawable/destquebrada" />
+
+                <Button
+                    android:id="@+id/buttonRavineMoreInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtButtonMoreInfo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="718dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTungasDescription"
+                app:layout_constraintTop_toTopOf="@+id/textViewTungasDescription">
+
+                <TextView
+                    android:id="@+id/textViewYungasTitle"
+                    android:layout_width="182dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="244dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewTungasTitle"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewTungasDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="341dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewYungasDescription"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonYungasMoreInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewYungasTitle" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="108dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewYungasTitle"
+                    app:srcCompat="@drawable/destyungas" />
+
+                <Button
+                    android:id="@+id/buttonYungasMoreInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="26dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtButtonMoreInfo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTungasDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="719dp">
+
+                <TextView
+                    android:id="@+id/textViewValleyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewValleyTitle"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewValleyDescription"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewValleyDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="35dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtTextViewValleyDescription"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewValleyTitle" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginEnd="38dp"
+                    android:layout_marginBottom="19dp"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonValleyMoreInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewValleyDescription"
+                    app:srcCompat="@drawable/destvalles" />
+
+                <Button
+                    android:id="@+id/buttonValleyMoreInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="128dp"
+                    android:layout_marginEnd="127dp"
+                    android:layout_marginBottom="17dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txtButtonMoreInfo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

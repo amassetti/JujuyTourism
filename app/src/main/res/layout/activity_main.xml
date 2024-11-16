@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWhatToDo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainlogo" />
+
+    <Button
+        android:id="@+id/buttonWhatToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#307643"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txtButtonWhatToDo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDestinations"
+        app:layout_constraintStart_toStartOf="@+id/buttonDestinations"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/buttonDestinations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="#A43030"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txtButtonDestinations"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCelebrations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWhatToDo" />
+
+    <Button
+        android:id="@+id/buttonCelebrations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="#C8B936"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txtButtonCelebrations"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInformation"
+        app:layout_constraintStart_toStartOf="@+id/buttonDestinations"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDestinations" />
+
+    <Button
+        android:id="@+id/buttonInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txtButtonInformation"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonCelebrations"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCelebrations" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
