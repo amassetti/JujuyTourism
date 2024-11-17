@@ -29,4 +29,5 @@
     <string name="txtTextViewNautic">Nautic Pilgrimage</string>
     <string name="txtTextViewWhiteRiver">White River Pilgrimage</string>
     <string name="txtTextViewManger">Mangers</string>
+    <string name="txtTextViewInfoTitle">Information</string>
 </resources>
